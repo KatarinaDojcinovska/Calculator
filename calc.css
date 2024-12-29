@@ -1,0 +1,69 @@
+:root{
+    --button-backgroundColor: rgba(236, 194, 201, 0.862);
+    --display-backgroundColor: rgb(251, 176, 188);
+    --hover-button-backgroundColor: rgba(219, 169, 178, 0.797);
+    --active-button-backgroundColor:rgba(236, 189, 197, 0.938);
+    --operator-button-backgroundColor: rgba(115, 221, 142, 0.862);
+    --numbers-color: rgb(239, 221, 224);
+    --font-size-numbers: 3rem;
+    --background-calculator: rgba(225, 103, 123, 0.833);
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--background-calculator);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: var(--font-size-numbers);
+    text-align: left;
+    border: none;
+    background-color: var(--display-backgroundColor) ;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--button-backgroundColor);
+    color: var(--numbers-color);
+    font-size: var(--font-size-numbers);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--hover-button-backgroundColor);
+}
+
+button:active{
+    background-color: var(--active-button-backgroundColor);
+}
+
+.operator-btn{
+    background-color: var(--operator-button-backgroundColor);
+}
+
+.operator-btn:hover{
+    background-color: var(--hover-button-backgroundColor);
+}
