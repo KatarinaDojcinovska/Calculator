@@ -11,3 +11,6 @@ function calculate ();
         display.value = "Error";
     }
 }
+function clearDisplay (){
+    display.value = "";
+}
