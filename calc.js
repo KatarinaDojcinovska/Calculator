@@ -1,7 +1,9 @@
 const display = document.getElementById("display");
+
 function appendToDisplay (input){
     display.value += input;
 }
+
 function calculate ();
 {
     try{
@@ -11,6 +13,7 @@ function calculate ();
         display.value = "Error";
     }
 }
+
 function clearDisplay (){
     display.value = "";
 }
